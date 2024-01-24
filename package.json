@@ -9,7 +9,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
+  "author": "pallab.gain@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
