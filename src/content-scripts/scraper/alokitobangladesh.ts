@@ -12,30 +12,30 @@ class AlokitoBangladesh extends AbastractNewspaper {
     super(paperName, paperImage, urls)
   }
 
-  getTags (): Array<string> {
+  getTags (): string[] {
     const result = [...document.querySelectorAll('#tags_list a')].map(element => element.textContent)
     return result
   }
 
-  getImages (): Array<string> {
+  getImages (): string[] {
     const mainImage = [...document.querySelectorAll('meta[property="og:image"]')].map(element => element.content)
     const otherImages = [...document.querySelectorAll('.dtl_img_block img')].map(item => item.src)
     return [...mainImage, ...otherImages]
   }
 
-  getLink (): Array<string> {
+  getLink (): string[] {
     const result = [...document.querySelectorAll('.allnews a, #latest_contents_block a')].map(item => item.href)
     return result
   }
 
   getContent (): string {
     return [...document.querySelectorAll('.dtl_content_block')]
-        .filter((element, index) => index === 0)
-        .map(element => {
-          const paragraphElements = element.querySelectorAll('p')
-          const result = [...paragraphElements].map(item => item.textContent).join('\n\n')
-          return result
-        }).join('\n\n');
+      .filter((element, index) => index === 0)
+      .map(element => {
+        const paragraphElements = element.querySelectorAll('p')
+        const result = [...paragraphElements].map(item => item.textContent).join('\n\n')
+        return result
+      }).join('\n\n')
   }
 }
 
