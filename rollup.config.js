@@ -5,7 +5,7 @@ const contentScript = {
     input: 'src/contentscript.ts',
     output: [
         {
-            file: 'dist/contentscript.js',
+            file: 'extension/contentscript.js',
             format: 'umd',
             name: 'NewsParserContentScript',
             sourcemap: false
@@ -28,7 +28,7 @@ const backgroundScript = {
     input: 'src/backgroundscript.ts',
     output: [
         {
-            file: 'dist/backgroundscript.js',
+            file: 'extension/backgroundscript.js',
             format: 'umd',
             name: 'NewsParserBackgroundScript',
             sourcemap: false
