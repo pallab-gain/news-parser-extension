@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "News Parser",
+  "version": "1.0",
+  "description": "A chrome extension that parse content from page",
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "socket.io.js",
+      "backgroundscript.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentscript.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_title": "News Parser",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
