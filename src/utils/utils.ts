@@ -3,5 +3,5 @@ const wait = async (ms: number): Promise<void> => {
 }
 
 // look into puppeteer-service/socket.io.ts timeout. this timeout should be less than few seconds of socket timeout
-const requestTimeoutInMs = 15 * 1000
+const requestTimeoutInMs = 30 * 1000
 export { wait, requestTimeoutInMs }

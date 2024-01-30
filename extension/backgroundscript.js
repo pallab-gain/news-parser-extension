@@ -19,7 +19,7 @@
     var e = new Error(message);
     return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
   };
-  var requestTimeoutInMs = 15 * 1e3;
+  var requestTimeoutInMs = 30 * 1e3;
   var SocketIO = function() {
     function SocketIO() {
       var _this = this;
