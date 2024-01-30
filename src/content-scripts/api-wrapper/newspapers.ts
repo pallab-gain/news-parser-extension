@@ -93,7 +93,7 @@ const getContentUrls = (url: string): Link[] => {
   const newspaper = newspapers.find((newspaper) => {
     return newspaper.urls.includes(url)
   })
-  if (!newspaper) {
+  if (newspaper == null) {
     throw new Error('newspaper not found')
   }
   const links = newspaper.getNewsLinks()
@@ -112,7 +112,7 @@ const getNewsContent = (link: Link): Details => {
   const newspaper = newspapers.find((newspaper) => {
     return newspaper.name === link.paper
   })
-  if (!newspaper) {
+  if (newspaper == null) {
     throw new Error('newspaper not found')
   }
 

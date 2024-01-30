@@ -22,5 +22,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "@typescript-eslint/ban-ts-comment": "off",
+        "no-extra-boolean-cast": "off",
     }
 }

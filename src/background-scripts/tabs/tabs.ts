@@ -6,7 +6,7 @@ const getTabs = (tabId: any): any => {
   return tab
 }
 
-const append = (payload: any) => {
+const append = (payload: any): void => {
   callbacks.push(payload)
 }
 

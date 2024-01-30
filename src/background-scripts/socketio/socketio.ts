@@ -6,6 +6,7 @@ import type {
   RequestNewsLink
 } from '../../types/message'
 import { append } from '../tabs/tabs'
+import { requestTimeoutInMs } from '../../utils/utils'
 
 class SocketIO {
   private readonly socket: any
@@ -15,12 +16,23 @@ class SocketIO {
     this.socket = io('http://localhost:3000', { autoConnect: false })
   }
 
-  onConnect = () => {
+  onConnect = (): void => {
     console.info('connected')
   }
 
-  onDisconnect = () => {
+  onDisconnect = (): void => {
     console.info('disconnected')
+  }
+
+  onCloseTab = (data: any): void => {
+    const { url } = data
+    // @ts-expect-error
+    chrome.tabs.query({}, (tabs) => {
+      // @ts-expect-error
+      const ids = tabs.filter(tab => tab.url?.includes(url)).map(tab => tab.id)
+      // @ts-expect-error
+      ids.forEach(id => chrome.tabs.remove(id))
+    })
   }
 
   onAllURLS = (callback: any): void => {
@@ -31,7 +43,11 @@ class SocketIO {
     // @ts-expect-error
     chrome.tabs.create({ url: 'https://google.com' }, (tab) => {
       const tabId = tab.id
-      append({ tabId, payload, callback })
+      const reqId = setTimeout(() => {
+        // @ts-expect-error
+        chrome.tabs.remove(tabId)
+      }, requestTimeoutInMs)
+      append({ tabId, payload, reqId, callback })
     })
   }
 
@@ -45,7 +61,11 @@ class SocketIO {
     // @ts-expect-error
     chrome.tabs.create({ url: 'https://google.com' }, (tab) => {
       const tabId = tab.id
-      append({ tabId, payload, callback })
+      const reqId = setTimeout(() => {
+        // @ts-expect-error
+        chrome.tabs.remove(tabId)
+      }, requestTimeoutInMs)
+      append({ tabId, payload, reqId, callback })
     })
   }
 
@@ -58,7 +78,11 @@ class SocketIO {
     // @ts-expect-error
     chrome.tabs.create({ url }, (tab) => {
       const tabId = tab.id
-      append({ tabId, payload, callback })
+      const reqId = setTimeout(() => {
+        // @ts-expect-error
+        chrome.tabs.remove(tabId)
+      }, requestTimeoutInMs)
+      append({ tabId, payload, reqId, callback })
     })
   }
 
@@ -74,11 +98,15 @@ class SocketIO {
     // @ts-expect-error
     chrome.tabs.create({ url }, (tab) => {
       const tabId = tab.id
-      append({ tabId, payload, callback })
+      const reqId = setTimeout(() => {
+        // @ts-expect-error
+        chrome.tabs.remove(tabId)
+      }, requestTimeoutInMs)
+      append({ tabId, payload, reqId, callback })
     })
   }
 
-  connect = () => {
+  connect = (): void => {
     this.socket.connect()
     this.socket.on('connect', this.onConnect)
     this.socket.on('disconnect', this.onDisconnect)
@@ -86,6 +114,7 @@ class SocketIO {
     this.socket.on('request.all_urls.paper', this.onAllURLSForPaper)
     this.socket.on('request.news_links', this.onNewsLinks)
     this.socket.on('request.dom_content', this.onDomContent)
+    this.socket.on('request.close_tab', this.onCloseTab)
   }
 }
 const socketIO = new SocketIO()
