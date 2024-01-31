@@ -16,7 +16,7 @@ class DhakaPost extends AbastractNewspaper {
     const result = [...document.querySelectorAll('article')]
       .filter((element, index) => index === 0)
       .map(element => {
-        return [...element.querySelectorAll('a[class*=bg]')].map(element => {
+        return [...element.nextSibling?.nextSibling?.querySelectorAll('a[class*=bg]') ?? []].map(element => {
           return element.textContent
         })
       }).flat(1)
@@ -32,8 +32,9 @@ class DhakaPost extends AbastractNewspaper {
       .map(element => {
         return [...element.querySelectorAll('img')].map(element => {
           return element.src
-        })
+        }).filter(element => !element.includes('platform-cdn.sharethis.com') && !element.includes('icon.png'))
       })
+
     return [...mainImage, ...otherImages]
   }
 
@@ -49,7 +50,7 @@ class DhakaPost extends AbastractNewspaper {
     const result = [...document.querySelectorAll('article')]
       .filter((element, index) => index === 0)
       .map(element => {
-        return [...element.querySelectorAll('p')].map(item => item.textContent).join('\n\n')
+        return [...element.querySelectorAll('.news-details p')].map(item => item.textContent).join('\n\n')
       }).join('\n\n')
     return result
   }

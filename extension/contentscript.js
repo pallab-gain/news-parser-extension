@@ -1627,7 +1627,8 @@
       var result = __spreadArray([], document.querySelectorAll("article"), true).filter((function(element, index) {
         return index === 0;
       })).map((function(element) {
-        return __spreadArray([], element.querySelectorAll("a[class*=bg]"), true).map((function(element) {
+        var _a, _b, _c;
+        return __spreadArray([], (_c = (_b = (_a = element.nextSibling) === null || _a === void 0 ? void 0 : _a.nextSibling) === null || _b === void 0 ? void 0 : _b.querySelectorAll("a[class*=bg]")) !== null && _c !== void 0 ? _c : [], true).map((function(element) {
           return element.textContent;
         }));
       })).flat(1);
@@ -1642,6 +1643,8 @@
       })).map((function(element) {
         return __spreadArray([], element.querySelectorAll("img"), true).map((function(element) {
           return element.src;
+        })).filter((function(element) {
+          return !element.includes("platform-cdn.sharethis.com") && !element.includes("icon.png");
         }));
       }));
       return __spreadArray(__spreadArray([], mainImage, true), otherImages, true);
@@ -1656,7 +1659,7 @@
       var result = __spreadArray([], document.querySelectorAll("article"), true).filter((function(element, index) {
         return index === 0;
       })).map((function(element) {
-        return __spreadArray([], element.querySelectorAll("p"), true).map((function(item) {
+        return __spreadArray([], element.querySelectorAll(".news-details p"), true).map((function(item) {
           return item.textContent;
         })).join("\n\n");
       })).join("\n\n");
