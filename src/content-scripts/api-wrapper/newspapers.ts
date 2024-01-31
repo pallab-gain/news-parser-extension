@@ -35,6 +35,7 @@ import Rajshahinews24 from '../scraper/rajshahinews24'
 import Somokal from '../scraper/somokal'
 import Suprovatbd from '../scraper/suprovatbd'
 import Sylhetexpress from '../scraper/sylhetexpress'
+import Dhakapost from '../scraper/dhakapost'
 
 const newspapers = [
   new AlokitoBangladesh(),
@@ -72,7 +73,8 @@ const newspapers = [
   new Rajshahinews24(),
   new Somokal(),
   new Suprovatbd(),
-  new Sylhetexpress()
+  new Sylhetexpress(),
+  new Dhakapost()
 ]
 
 const getAllUrls = (): string[] => {

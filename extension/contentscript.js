@@ -141,13 +141,13 @@
     };
     return AbastractNewspaper;
   }();
-  var paperName$z = "আলোকিত বাংলাদেশ";
-  var paperImage$z = "https://www.alokitobangladesh.com/templates/desktop-v1/images/logo.png";
-  var urls$z = [ "https://www.alokitobangladesh.com/all-news", "https://www.alokitobangladesh.com/country-news" ];
+  var paperName$A = "আলোকিত বাংলাদেশ";
+  var paperImage$A = "https://www.alokitobangladesh.com/templates/desktop-v1/images/logo.png";
+  var urls$A = [ "https://www.alokitobangladesh.com/all-news", "https://www.alokitobangladesh.com/country-news" ];
   var AlokitoBangladesh = function(_super) {
     __extends(AlokitoBangladesh, _super);
     function AlokitoBangladesh() {
-      return _super.call(this, paperName$z, paperImage$z, urls$z) || this;
+      return _super.call(this, paperName$A, paperImage$A, urls$A) || this;
     }
     AlokitoBangladesh.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll("#tags_list a"), true).map((function(element) {
@@ -183,13 +183,13 @@
     };
     return AlokitoBangladesh;
   }(AbastractNewspaper);
-  var paperName$y = "আমাদের সময়";
-  var paperImage$y = "https://flashn3ws-scraper.fly.dev/api/v1/dist/amader-shomoy-logo.jpg";
-  var urls$y = [ "https://dainikamadershomoy.com/latest/all", "https://dainikamadershomoy.com/category/sarades" ];
+  var paperName$z = "আমাদের সময়";
+  var paperImage$z = "https://flashn3ws-scraper.fly.dev/api/v1/dist/amader-shomoy-logo.jpg";
+  var urls$z = [ "https://dainikamadershomoy.com/latest/all", "https://dainikamadershomoy.com/category/sarades" ];
   var AmatherSomoy = function(_super) {
     __extends(AmatherSomoy, _super);
     function AmatherSomoy() {
-      return _super.call(this, paperName$y, paperImage$y, urls$y) || this;
+      return _super.call(this, paperName$z, paperImage$z, urls$z) || this;
     }
     AmatherSomoy.prototype.getTitle = function() {
       var title = __spreadArray([], document.querySelectorAll("head > title"), true).map((function(element) {
@@ -236,13 +236,13 @@
     };
     return AmatherSomoy;
   }(AbastractNewspaper);
-  var paperName$x = "দৈনিক আজাদী";
-  var paperImage$x = "https://dainikazadi.net/wp-content/uploads/logo/azadi_logo.png";
-  var urls$x = [ "https://dainikazadi.net/category/%e0%a6%b8%e0%a6%b0%e0%a7%8d%e0%a6%ac%e0%a6%b6%e0%a7%87%e0%a6%b7/" ];
+  var paperName$y = "দৈনিক আজাদী";
+  var paperImage$y = "https://dainikazadi.net/wp-content/uploads/logo/azadi_logo.png";
+  var urls$y = [ "https://dainikazadi.net/category/%e0%a6%b8%e0%a6%b0%e0%a7%8d%e0%a6%ac%e0%a6%b6%e0%a7%87%e0%a6%b7/" ];
   var Azadi = function(_super) {
     __extends(Azadi, _super);
     function Azadi() {
-      return _super.call(this, paperName$x, paperImage$x, urls$x) || this;
+      return _super.call(this, paperName$y, paperImage$y, urls$y) || this;
     }
     Azadi.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -271,13 +271,13 @@
     };
     return Azadi;
   }(AbastractNewspaper);
-  var paperName$w = "বাংলানিউজ২৪";
-  var paperImage$w = "https://www.banglanews24.com/public/desktop/img/bn24_logo_3.jpg";
-  var urls$w = [ "https://www.banglanews24.com/", "https://www.banglanews24.com/category/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F/1" ];
+  var paperName$x = "বাংলানিউজ২৪";
+  var paperImage$x = "https://www.banglanews24.com/public/desktop/img/bn24_logo_3.jpg";
+  var urls$x = [ "https://www.banglanews24.com/", "https://www.banglanews24.com/category/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F/1" ];
   var Banglanews24 = function(_super) {
     __extends(Banglanews24, _super);
     function Banglanews24() {
-      return _super.call(this, paperName$w, paperImage$w, urls$w) || this;
+      return _super.call(this, paperName$x, paperImage$x, urls$x) || this;
     }
     Banglanews24.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".related_tag a"), true).map((function(element) {
@@ -310,13 +310,13 @@
     };
     return Banglanews24;
   }(AbastractNewspaper);
-  var paperName$v = "বণিক বার্তা";
-  var paperImage$v = "https://bonikbarta.net/uploads/logo_image/bonikbarta_logo.png";
-  var urls$v = [ "https://bonikbarta.net", "https://bonikbarta.net/home/desherbarta/10/0" ];
+  var paperName$w = "বণিক বার্তা";
+  var paperImage$w = "https://bonikbarta.net/uploads/logo_image/bonikbarta_logo.png";
+  var urls$w = [ "https://bonikbarta.net", "https://bonikbarta.net/home/desherbarta/10/0" ];
   var BanikBarta = function(_super) {
     __extends(BanikBarta, _super);
     function BanikBarta() {
-      return _super.call(this, paperName$v, paperImage$v, urls$v) || this;
+      return _super.call(this, paperName$w, paperImage$w, urls$w) || this;
     }
     BanikBarta.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".post-body"), true).filter((function(element, index) {
@@ -359,13 +359,13 @@
     };
     return BanikBarta;
   }(AbastractNewspaper);
-  var paperName$u = "বিবিসি ২৪ নিউজ";
-  var paperImage$u = "https://www.bbc24news.com/cloud/archives/fileman/bbc-logo.jpg";
-  var urls$u = [ "https://www.bbc24news.com/", "https://www.bbc24news.com/section/%e0%a6%9c%e0%a6%be%e0%a6%a4%e0%a7%80%e0%a7%9f" ];
+  var paperName$v = "বিবিসি ২৪ নিউজ";
+  var paperImage$v = "https://www.bbc24news.com/cloud/archives/fileman/bbc-logo.jpg";
+  var urls$v = [ "https://www.bbc24news.com/", "https://www.bbc24news.com/section/%e0%a6%9c%e0%a6%be%e0%a6%a4%e0%a7%80%e0%a7%9f" ];
   var BBC24News = function(_super) {
     __extends(BBC24News, _super);
     function BBC24News() {
-      return _super.call(this, paperName$u, paperImage$u, urls$u) || this;
+      return _super.call(this, paperName$v, paperImage$v, urls$v) || this;
     }
     BBC24News.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll('#content > .noprint > a[rel="category tag"]'), true).map((function(element) {
@@ -398,13 +398,13 @@
     };
     return BBC24News;
   }(AbastractNewspaper);
-  var paperName$t = "BBC News বাংলা";
-  var paperImage$t = "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/BBC_Bangla_logo.svg/440px-BBC_Bangla_logo.svg.png";
-  var urls$t = [ "https://www.bbc.com/bengali", "https://www.bbc.com/bengali/topics/c907347rezkt" ];
+  var paperName$u = "BBC News বাংলা";
+  var paperImage$u = "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/BBC_Bangla_logo.svg/440px-BBC_Bangla_logo.svg.png";
+  var urls$u = [ "https://www.bbc.com/bengali", "https://www.bbc.com/bengali/topics/c907347rezkt" ];
   var BBCBangla = function(_super) {
     __extends(BBCBangla, _super);
     function BBCBangla() {
-      return _super.call(this, paperName$t, paperImage$t, urls$t) || this;
+      return _super.call(this, paperName$u, paperImage$u, urls$u) || this;
     }
     BBCBangla.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll('[aria-labelledby="related-topics"] a'), true).map((function(element) {
@@ -439,13 +439,13 @@
     };
     return BBCBangla;
   }(AbastractNewspaper);
-  var paperName$s = "বাংলাদেশ প্রতিদিন";
-  var paperImage$s = "https://www.bd-pratidin.com/assets/newDesktop/img/logo.png?v=2";
-  var urls$s = [ "https://www.bd-pratidin.com", "https://www.bd-pratidin.com/country" ];
+  var paperName$t = "বাংলাদেশ প্রতিদিন";
+  var paperImage$t = "https://www.bd-pratidin.com/assets/newDesktop/img/logo.png?v=2";
+  var urls$t = [ "https://www.bd-pratidin.com", "https://www.bd-pratidin.com/country" ];
   var BDProtidin = function(_super) {
     __extends(BDProtidin, _super);
     function BDProtidin() {
-      return _super.call(this, paperName$s, paperImage$s, urls$s) || this;
+      return _super.call(this, paperName$t, paperImage$t, urls$t) || this;
     }
     BDProtidin.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".tagArea a"), true).map((function(element) {
@@ -476,13 +476,13 @@
     };
     return BDProtidin;
   }(AbastractNewspaper);
-  var paperName$r = "বাংলাদেশ জার্নাল";
-  var paperImage$r = "https://www.bd-journal.com/templates/web-v1/images/logo.png?v=1.7";
-  var urls$r = [ "https://www.bd-journal.com/all-news", "https://www.bd-journal.com/bangladesh" ];
+  var paperName$s = "বাংলাদেশ জার্নাল";
+  var paperImage$s = "https://www.bd-journal.com/templates/web-v1/images/logo.png?v=1.7";
+  var urls$s = [ "https://www.bd-journal.com/all-news", "https://www.bd-journal.com/bangladesh" ];
   var BDJournal = function(_super) {
     __extends(BDJournal, _super);
     function BDJournal() {
-      return _super.call(this, paperName$r, paperImage$r, urls$r) || this;
+      return _super.call(this, paperName$s, paperImage$s, urls$s) || this;
     }
     BDJournal.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll("#tags_list a"), true).map((function(element) {
@@ -517,13 +517,13 @@
     };
     return BDJournal;
   }(AbastractNewspaper);
-  var paperName$q = "ভোরের কাগজ";
-  var paperImage$q = "https://bhorerkagoj.com/uploads/settings/logo-black.png";
-  var urls$q = [ "https://www.bhorerkagoj.com/", "https://www.bhorerkagoj.com/category/bangladesh/" ];
+  var paperName$r = "ভোরের কাগজ";
+  var paperImage$r = "https://bhorerkagoj.com/uploads/settings/logo-black.png";
+  var urls$r = [ "https://www.bhorerkagoj.com/", "https://www.bhorerkagoj.com/category/bangladesh/" ];
   var Bhorerkagoj = function(_super) {
     __extends(Bhorerkagoj, _super);
     function Bhorerkagoj() {
-      return _super.call(this, paperName$q, paperImage$q, urls$q) || this;
+      return _super.call(this, paperName$r, paperImage$r, urls$r) || this;
     }
     Bhorerkagoj.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".desktopDetailTag"), true).filter((function(element, index) {
@@ -570,13 +570,13 @@
     };
     return Bhorerkagoj;
   }(AbastractNewspaper);
-  var paperName$p = "চাঁদপুর টাইমস";
-  var paperImage$p = "https://chandpurtimes.com/wp-content/uploads/2019/09/Logo-Chandpur-Times-300x75.png";
-  var urls$p = [ "https://chandpurtimes.com/" ];
+  var paperName$q = "চাঁদপুর টাইমস";
+  var paperImage$q = "https://chandpurtimes.com/wp-content/uploads/2019/09/Logo-Chandpur-Times-300x75.png";
+  var urls$q = [ "https://chandpurtimes.com/" ];
   var ChadpurTimes = function(_super) {
     __extends(ChadpurTimes, _super);
     function ChadpurTimes() {
-      return _super.call(this, paperName$p, paperImage$p, urls$p, true) || this;
+      return _super.call(this, paperName$q, paperImage$q, urls$q, true) || this;
     }
     ChadpurTimes.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll("#crumbs a:not(:first-child)"), true).map((function(element) {
@@ -611,13 +611,13 @@
     };
     return ChadpurTimes;
   }(AbastractNewspaper);
-  var paperName$o = "চকরিয়া নিউজ";
-  var paperImage$o = "https://chakarianews.com/wp-content/uploads/2021/05/CN2.jpg";
-  var urls$o = [ "https://chakarianews.com/" ];
+  var paperName$p = "চকরিয়া নিউজ";
+  var paperImage$p = "https://chakarianews.com/wp-content/uploads/2021/05/CN2.jpg";
+  var urls$p = [ "https://chakarianews.com/" ];
   var ChakariaNews = function(_super) {
     __extends(ChakariaNews, _super);
     function ChakariaNews() {
-      return _super.call(this, paperName$o, paperImage$o, urls$o, true) || this;
+      return _super.call(this, paperName$p, paperImage$p, urls$p, true) || this;
     }
     ChakariaNews.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumbs .item-cat a"), true).map((function(element) {
@@ -652,13 +652,13 @@
     };
     return ChakariaNews;
   }(AbastractNewspaper);
-  var paperName$n = "কক্সবাজার নিউজ";
-  var paperImage$n = "https://www.coxsbazarnews.com/wp-content/uploads/2021/02/logo.png";
-  var urls$n = [ "https://www.coxsbazarnews.com" ];
+  var paperName$o = "কক্সবাজার নিউজ";
+  var paperImage$o = "https://www.coxsbazarnews.com/wp-content/uploads/2021/02/logo.png";
+  var urls$o = [ "https://www.coxsbazarnews.com" ];
   var CoxbazerNews = function(_super) {
     __extends(CoxbazerNews, _super);
     function CoxbazerNews() {
-      return _super.call(this, paperName$n, paperImage$n, urls$n, true) || this;
+      return _super.call(this, paperName$o, paperImage$o, urls$o, true) || this;
     }
     CoxbazerNews.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -687,13 +687,13 @@
     };
     return CoxbazerNews;
   }(AbastractNewspaper);
-  var paperName$m = "দৈনিক ইনকিলাব";
-  var paperImage$m = "https://dailyinqilab.com/mediaStorage/common/logo1671282573.png";
-  var urls$m = [ "https://dailyinqilab.com/archive" ];
+  var paperName$n = "দৈনিক ইনকিলাব";
+  var paperImage$n = "https://dailyinqilab.com/mediaStorage/common/logo1671282573.png";
+  var urls$n = [ "https://dailyinqilab.com/archive" ];
   var DailyInqilab = function(_super) {
     __extends(DailyInqilab, _super);
     function DailyInqilab() {
-      return _super.call(this, paperName$m, paperImage$m, urls$m) || this;
+      return _super.call(this, paperName$n, paperImage$n, urls$n) || this;
     }
     DailyInqilab.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumb a"), true).map((function(element) {
@@ -728,13 +728,13 @@
     };
     return DailyInqilab;
   }(AbastractNewspaper);
-  var paperName$l = "দৈনিক সংগ্রাম";
-  var paperImage$l = "https://www.dailysangram.com/logos/logo.jpg";
-  var urls$l = [ "https://dailysangram.com/", "https://dailysangram.com/section/bangladesh/" ];
+  var paperName$m = "দৈনিক সংগ্রাম";
+  var paperImage$m = "https://www.dailysangram.com/logos/logo.jpg";
+  var urls$m = [ "https://dailysangram.com/", "https://dailysangram.com/section/bangladesh/" ];
   var DainikSangram = function(_super) {
     __extends(DainikSangram, _super);
     function DainikSangram() {
-      return _super.call(this, paperName$l, paperImage$l, urls$l) || this;
+      return _super.call(this, paperName$m, paperImage$m, urls$m) || this;
     }
     DainikSangram.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumb li:not(:first-child) a"), true).map((function(element) {
@@ -765,13 +765,13 @@
     };
     return DainikSangram;
   }(AbastractNewspaper);
-  var paperName$k = "দি ডেইলি স্টার বাংলা";
-  var paperImage$k = "https://bangla.thedailystar.net/sites/all/themes/sloth/logo-bn.png";
-  var urls$k = [ "https://bangla.thedailystar.net/todays-news", "https://bangla.thedailystar.net/news/bangladesh" ];
+  var paperName$l = "দি ডেইলি স্টার বাংলা";
+  var paperImage$l = "https://bangla.thedailystar.net/sites/all/themes/sloth/logo-bn.png";
+  var urls$l = [ "https://bangla.thedailystar.net/todays-news", "https://bangla.thedailystar.net/news/bangladesh" ];
   var DailyStarbangla = function(_super) {
     __extends(DailyStarbangla, _super);
     function DailyStarbangla() {
-      return _super.call(this, paperName$k, paperImage$k, urls$k) || this;
+      return _super.call(this, paperName$l, paperImage$l, urls$l) || this;
     }
     DailyStarbangla.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".content-tags"), true).filter((function(element, index) {
@@ -810,13 +810,13 @@
     };
     return DailyStarbangla;
   }(AbastractNewspaper);
-  var paperName$j = "দৈনিক বাংলা";
-  var paperImage$j = "https://flashn3ws-scraper.fly.dev/api/v1/dist/dainik_bangla.png";
-  var urls$j = [ "https://www.dainikbangla.com.bd/allnews" ];
+  var paperName$k = "দৈনিক বাংলা";
+  var paperImage$k = "https://flashn3ws-scraper.fly.dev/api/v1/dist/dainik_bangla.png";
+  var urls$k = [ "https://www.dainikbangla.com.bd/allnews" ];
   var DainikBangla = function(_super) {
     __extends(DainikBangla, _super);
     function DainikBangla() {
-      return _super.call(this, paperName$j, paperImage$j, urls$j) || this;
+      return _super.call(this, paperName$k, paperImage$k, urls$k) || this;
     }
     DainikBangla.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumb_container a"), true).map((function(element) {
@@ -855,13 +855,13 @@
     };
     return DainikBangla;
   }(AbastractNewspaper);
-  var paperName$i = "দেশে বিদেশে";
-  var paperImage$i = "https://www.deshebideshe.com/wp-content/uploads/2023/02/news-logo-.png";
-  var urls$i = [ "https://www.deshebideshe.com/", "https://www.deshebideshe.com/category/bangladesh/national/", "https://www.deshebideshe.com/category/bangladesh/dhaka-division/", "https://www.deshebideshe.com/category/bangladesh/chattogram-division/" ];
+  var paperName$j = "দেশে বিদেশে";
+  var paperImage$j = "https://www.deshebideshe.com/wp-content/uploads/2023/02/news-logo-.png";
+  var urls$j = [ "https://www.deshebideshe.com/", "https://www.deshebideshe.com/category/bangladesh/national/", "https://www.deshebideshe.com/category/bangladesh/dhaka-division/", "https://www.deshebideshe.com/category/bangladesh/chattogram-division/" ];
   var DesheBideshe = function(_super) {
     __extends(DesheBideshe, _super);
     function DesheBideshe() {
-      return _super.call(this, paperName$i, paperImage$i, urls$i) || this;
+      return _super.call(this, paperName$j, paperImage$j, urls$j) || this;
     }
     DesheBideshe.prototype.removeAds = function() {
       _super.prototype.removeAds.call(this);
@@ -900,13 +900,13 @@
     };
     return DesheBideshe;
   }(AbastractNewspaper);
-  var paperName$h = "গ্রামের কাগজ";
-  var paperImage$h = "https://www.gramerkagoj.com/login/public/storage/about/logo-2023-08-21-64e2f191e8483.jpg";
-  var urls$h = [ "https://gramerkagoj.com/last.php?type=%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%B6%E0%A7%87%E0%A6%B7%20%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6" ];
+  var paperName$i = "গ্রামের কাগজ";
+  var paperImage$i = "https://www.gramerkagoj.com/login/public/storage/about/logo-2023-08-21-64e2f191e8483.jpg";
+  var urls$i = [ "https://gramerkagoj.com/last.php?type=%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%B6%E0%A7%87%E0%A6%B7%20%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6" ];
   var GramerKagoj = function(_super) {
     __extends(GramerKagoj, _super);
     function GramerKagoj() {
-      return _super.call(this, paperName$h, paperImage$h, urls$h, true) || this;
+      return _super.call(this, paperName$i, paperImage$i, urls$i, true) || this;
     }
     GramerKagoj.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -935,13 +935,13 @@
     };
     return GramerKagoj;
   }(AbastractNewspaper);
-  var paperName$g = "দৈনিক ইত্তেফাক";
-  var paperImage$g = "https://flashn3ws-scraper.fly.dev/api/v1/dist/daily-ittefaq.jpg";
-  var urls$g = [ "https://www.ittefaq.com.bd/latest-news", "https://www.ittefaq.com.bd/country" ];
+  var paperName$h = "দৈনিক ইত্তেফাক";
+  var paperImage$h = "https://flashn3ws-scraper.fly.dev/api/v1/dist/daily-ittefaq.jpg";
+  var urls$h = [ "https://www.ittefaq.com.bd/latest-news", "https://www.ittefaq.com.bd/country" ];
   var Ittefaq = function(_super) {
     __extends(Ittefaq, _super);
     function Ittefaq() {
-      return _super.call(this, paperName$g, paperImage$g, urls$g) || this;
+      return _super.call(this, paperName$h, paperImage$h, urls$h) || this;
     }
     Ittefaq.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".topic_list a"), true).map((function(element) {
@@ -972,13 +972,13 @@
     };
     return Ittefaq;
   }(AbastractNewspaper);
-  var paperName$f = "জাগোনিউজ২৪";
-  var paperImage$f = "https://cdn.jagonews24.com/media/common/logo.png";
-  var urls$f = [ "https://www.jagonews24.com/archive", "https://www.jagonews24.com/national" ];
+  var paperName$g = "জাগোনিউজ২৪";
+  var paperImage$g = "https://cdn.jagonews24.com/media/common/logo.png";
+  var urls$g = [ "https://www.jagonews24.com/archive", "https://www.jagonews24.com/national" ];
   var Jagonews24 = function(_super) {
     __extends(Jagonews24, _super);
     function Jagonews24() {
-      return _super.call(this, paperName$f, paperImage$f, urls$f) || this;
+      return _super.call(this, paperName$g, paperImage$g, urls$g) || this;
     }
     Jagonews24.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".photo-tags a"), true).map((function(element) {
@@ -1011,13 +1011,13 @@
     };
     return Jagonews24;
   }(AbastractNewspaper);
-  var paperName$e = "যায়যায়দিন";
-  var paperImage$e = "https://www.jaijaidinbd.com/templates/web-view/images/logo_new.png";
-  var urls$e = [ "https://www.jaijaidinbd.com/all-news", "https://www.jaijaidinbd.com/wholecountry" ];
+  var paperName$f = "যায়যায়দিন";
+  var paperImage$f = "https://www.jaijaidinbd.com/templates/web-view/images/logo_new.png";
+  var urls$f = [ "https://www.jaijaidinbd.com/all-news", "https://www.jaijaidinbd.com/wholecountry" ];
   var Jaijaidin = function(_super) {
     __extends(Jaijaidin, _super);
     function Jaijaidin() {
-      return _super.call(this, paperName$e, paperImage$e, urls$e) || this;
+      return _super.call(this, paperName$f, paperImage$f, urls$f) || this;
     }
     Jaijaidin.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumb a"), true).map((function(element) {
@@ -1050,13 +1050,13 @@
     };
     return Jaijaidin;
   }(AbastractNewspaper);
-  var paperName$d = "দৈনিক জনকণ্ঠ";
-  var paperImage$d = "https://www.dailyjanakantha.com/media/common/janakantha-logo.png";
-  var urls$d = [ "https://www.dailyjanakantha.com/archives/", "https://www.dailyjanakantha.com/bangladesh/" ];
+  var paperName$e = "দৈনিক জনকণ্ঠ";
+  var paperImage$e = "https://www.dailyjanakantha.com/media/common/janakantha-logo.png";
+  var urls$e = [ "https://www.dailyjanakantha.com/archives/", "https://www.dailyjanakantha.com/bangladesh/" ];
   var Janakantha = function(_super) {
     __extends(Janakantha, _super);
     function Janakantha() {
-      return _super.call(this, paperName$d, paperImage$d, urls$d) || this;
+      return _super.call(this, paperName$e, paperImage$e, urls$e) || this;
     }
     Janakantha.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".list-inline a"), true).map((function(element) {
@@ -1089,13 +1089,13 @@
     };
     return Janakantha;
   }(AbastractNewspaper);
-  var paperName$c = "যুগান্তর";
-  var paperImage$c = "https://flashn3ws-scraper.fly.dev/api/v1/dist/jugantor.png";
-  var urls$c = [ "https://www.jugantor.com/all-news/", "https://www.jugantor.com/country-news" ];
+  var paperName$d = "যুগান্তর";
+  var paperImage$d = "https://flashn3ws-scraper.fly.dev/api/v1/dist/jugantor.png";
+  var urls$d = [ "https://www.jugantor.com/all-news/", "https://www.jugantor.com/country-news" ];
   var Jugantor = function(_super) {
     __extends(Jugantor, _super);
     function Jugantor() {
-      return _super.call(this, paperName$c, paperImage$c, urls$c) || this;
+      return _super.call(this, paperName$d, paperImage$d, urls$d) || this;
     }
     Jugantor.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".trending a"), true).map((function(element) {
@@ -1126,13 +1126,13 @@
     };
     return Jugantor;
   }(AbastractNewspaper);
-  var paperName$b = "লক্ষ্মীপুর24.কম";
-  var paperImage$b = "https://lakshmipur24.news/wp-content/uploads/2023/12/Lakshmipur-24.png";
-  var urls$b = [ "https://lakshmipur24.news/?s&post_type=post" ];
+  var paperName$c = "লক্ষ্মীপুর24.কম";
+  var paperImage$c = "https://lakshmipur24.news/wp-content/uploads/2023/12/Lakshmipur-24.png";
+  var urls$c = [ "https://lakshmipur24.news/?s&post_type=post" ];
   var Lakshmiput24 = function(_super) {
     __extends(Lakshmiput24, _super);
     function Lakshmiput24() {
-      return _super.call(this, paperName$b, paperImage$b, urls$b, true) || this;
+      return _super.call(this, paperName$c, paperImage$c, urls$c, true) || this;
     }
     Lakshmiput24.prototype.getTitle = function() {
       var title = __spreadArray([], document.querySelectorAll("head > title"), true).map((function(element) {
@@ -1173,13 +1173,13 @@
     };
     return Lakshmiput24;
   }(AbastractNewspaper);
-  var paperName$a = "মানবকণ্ঠ";
-  var paperImage$a = "https://manage.manobkantha.com.bd/files/uploads/SA-Logo-Re.png?v=1";
-  var urls$a = [ "https://www.manobkantha.com.bd/archive", "https://www.manobkantha.com.bd/country?division_id=1", "https://www.manobkantha.com.bd/country?division_id=2", "https://www.manobkantha.com.bd/country?division_id=5", "https://www.manobkantha.com.bd/country?division_id=3", "https://www.manobkantha.com.bd/country?division_id=7", "https://www.manobkantha.com.bd/country?division_id=8", "https://www.manobkantha.com.bd/country?division_id=6", "https://www.manobkantha.com.bd/country?division_id=4" ];
+  var paperName$b = "মানবকণ্ঠ";
+  var paperImage$b = "https://manage.manobkantha.com.bd/files/uploads/SA-Logo-Re.png?v=1";
+  var urls$b = [ "https://www.manobkantha.com.bd/archive", "https://www.manobkantha.com.bd/country?division_id=1", "https://www.manobkantha.com.bd/country?division_id=2", "https://www.manobkantha.com.bd/country?division_id=5", "https://www.manobkantha.com.bd/country?division_id=3", "https://www.manobkantha.com.bd/country?division_id=7", "https://www.manobkantha.com.bd/country?division_id=8", "https://www.manobkantha.com.bd/country?division_id=6", "https://www.manobkantha.com.bd/country?division_id=4" ];
   var Manabkantha = function(_super) {
     __extends(Manabkantha, _super);
     function Manabkantha() {
-      return _super.call(this, paperName$a, paperImage$a, urls$a) || this;
+      return _super.call(this, paperName$b, paperImage$b, urls$b) || this;
     }
     Manabkantha.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".category-title a"), true).map((function(element) {
@@ -1214,13 +1214,13 @@
     };
     return Manabkantha;
   }(AbastractNewspaper);
-  var paperName$9 = "ময়মনসিংহ প্রতিদিন";
-  var paperImage$9 = "https://mymensinghpratidin.com/wp-content/uploads/2023/08/MP.png";
-  var urls$9 = [ "https://mymensinghpratidin.com/" ];
+  var paperName$a = "ময়মনসিংহ প্রতিদিন";
+  var paperImage$a = "https://mymensinghpratidin.com/wp-content/uploads/2023/08/MP.png";
+  var urls$a = [ "https://mymensinghpratidin.com/" ];
   var MMProtidin = function(_super) {
     __extends(MMProtidin, _super);
     function MMProtidin() {
-      return _super.call(this, paperName$9, paperImage$9, urls$9) || this;
+      return _super.call(this, paperName$a, paperImage$a, urls$a) || this;
     }
     MMProtidin.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".td-category a"), true).map((function(element) {
@@ -1255,13 +1255,13 @@
     };
     return MMProtidin;
   }(AbastractNewspaper);
-  var paperName$8 = "মানবজমিন";
-  var paperImage$8 = "https://mzamin.com/assets/images/logo.png";
-  var urls$8 = [ "https://mzamin.com/", "https://mzamin.com/category.php?cat=8/" ];
+  var paperName$9 = "মানবজমিন";
+  var paperImage$9 = "https://mzamin.com/assets/images/logo.png";
+  var urls$9 = [ "https://mzamin.com/", "https://mzamin.com/category.php?cat=8/" ];
   var MZamin = function(_super) {
     __extends(MZamin, _super);
     function MZamin() {
-      return _super.call(this, paperName$8, paperImage$8, urls$8) || this;
+      return _super.call(this, paperName$9, paperImage$9, urls$9) || this;
     }
     MZamin.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -1291,13 +1291,13 @@
     };
     return MZamin;
   }(AbastractNewspaper);
-  var paperName$7 = "নয়া দিগন্ত";
-  var paperImage$7 = "https://www.dailynayadiganta.com/resources/img/sitesetup/1_2.png";
-  var urls$7 = [ "https://www.dailynayadiganta.com/", "https://www.dailynayadiganta.com/country/7" ];
+  var paperName$8 = "নয়া দিগন্ত";
+  var paperImage$8 = "https://www.dailynayadiganta.com/resources/img/sitesetup/1_2.png";
+  var urls$8 = [ "https://www.dailynayadiganta.com/", "https://www.dailynayadiganta.com/country/7" ];
   var NayaDiganta = function(_super) {
     __extends(NayaDiganta, _super);
     function NayaDiganta() {
-      return _super.call(this, paperName$7, paperImage$7, urls$7) || this;
+      return _super.call(this, paperName$8, paperImage$8, urls$8) || this;
     }
     NayaDiganta.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".breadcrumb a"), true).map((function(element) {
@@ -1328,13 +1328,13 @@
     };
     return NayaDiganta;
   }(AbastractNewspaper);
-  var paperName$6 = "প্রথম আলো";
-  var paperImage$6 = "https://flashn3ws-scraper.fly.dev/api/v1/dist/prothom-alo.png";
-  var urls$6 = [ "https://www.prothomalo.com/collection/latest/", "https://www.prothomalo.com/bangladesh", "https://www.prothomalo.com/opinion" ];
+  var paperName$7 = "প্রথম আলো";
+  var paperImage$7 = "https://flashn3ws-scraper.fly.dev/api/v1/dist/prothom-alo.png";
+  var urls$7 = [ "https://www.prothomalo.com/collection/latest/", "https://www.prothomalo.com/bangladesh", "https://www.prothomalo.com/opinion" ];
   var ProthomAlo = function(_super) {
     __extends(ProthomAlo, _super);
     function ProthomAlo() {
-      return _super.call(this, paperName$6, paperImage$6, urls$6) || this;
+      return _super.call(this, paperName$7, paperImage$7, urls$7) || this;
     }
     ProthomAlo.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".tag-list a"), true).map((function(element) {
@@ -1372,13 +1372,13 @@
     };
     return ProthomAlo;
   }(AbastractNewspaper);
-  var paperName$5 = "প্রথম-ফেনী.কম";
-  var paperImage$5 = "https://prothom-feni.com/wp-content/uploads/2022/04/Logo-prothom-fen-01.png";
-  var urls$5 = [ "https://prothom-feni.com/" ];
+  var paperName$6 = "প্রথম-ফেনী.কম";
+  var paperImage$6 = "https://prothom-feni.com/wp-content/uploads/2022/04/Logo-prothom-fen-01.png";
+  var urls$6 = [ "https://prothom-feni.com/" ];
   var ProthomFeni = function(_super) {
     __extends(ProthomFeni, _super);
     function ProthomFeni() {
-      return _super.call(this, paperName$5, paperImage$5, urls$5, true) || this;
+      return _super.call(this, paperName$6, paperImage$6, urls$6, true) || this;
     }
     ProthomFeni.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -1407,13 +1407,13 @@
     };
     return ProthomFeni;
   }(AbastractNewspaper);
-  var paperName$4 = "দৈনিক পূর্বাঞ্চল";
-  var paperImage$4 = "https://purbanchal.com/img/ratina_logo_544x180.png";
-  var urls$4 = [ "https://purbanchal.com/" ];
+  var paperName$5 = "দৈনিক পূর্বাঞ্চল";
+  var paperImage$5 = "https://purbanchal.com/img/ratina_logo_544x180.png";
+  var urls$5 = [ "https://purbanchal.com/" ];
   var Purbanchal = function(_super) {
     __extends(Purbanchal, _super);
     function Purbanchal() {
-      return _super.call(this, paperName$4, paperImage$4, urls$4, true) || this;
+      return _super.call(this, paperName$5, paperImage$5, urls$5, true) || this;
     }
     Purbanchal.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".entry-category a"), true).map((function(element) {
@@ -1448,13 +1448,13 @@
     };
     return Purbanchal;
   }(AbastractNewspaper);
-  var paperName$3 = "রাজশাহী নিউজ 24";
-  var paperImage$3 = "https://rajshahinews24.com/public/templateimage/60ef5cebb8486.jpg";
-  var urls$3 = [ "https://rajshahinews24.com/" ];
+  var paperName$4 = "রাজশাহী নিউজ 24";
+  var paperImage$4 = "https://rajshahinews24.com/public/templateimage/60ef5cebb8486.jpg";
+  var urls$4 = [ "https://rajshahinews24.com/" ];
   var Rajshahinews24 = function(_super) {
     __extends(Rajshahinews24, _super);
     function Rajshahinews24() {
-      return _super.call(this, paperName$3, paperImage$3, urls$3, true) || this;
+      return _super.call(this, paperName$4, paperImage$4, urls$4, true) || this;
     }
     Rajshahinews24.prototype.getSummary = function() {
       var summaries = __spreadArray([], document.querySelectorAll('meta[property="og:description"]'), true).filter((function(element, index) {
@@ -1493,13 +1493,13 @@
     };
     return Rajshahinews24;
   }(AbastractNewspaper);
-  var paperName$2 = "সমকাল";
-  var paperImage$2 = "https://samakal.com/frontend/media/common/logo.png";
-  var urls$2 = [ "https://samakal.com/", "https://samakal.com/bangladesh" ];
+  var paperName$3 = "সমকাল";
+  var paperImage$3 = "https://samakal.com/frontend/media/common/logo.png";
+  var urls$3 = [ "https://samakal.com/", "https://samakal.com/bangladesh" ];
   var Samakal = function(_super) {
     __extends(Samakal, _super);
     function Samakal() {
-      return _super.call(this, paperName$2, paperImage$2, urls$2) || this;
+      return _super.call(this, paperName$3, paperImage$3, urls$3) || this;
     }
     Samakal.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".tagArea li:not(:first-child)"), true).map((function(element) {
@@ -1539,13 +1539,13 @@
     };
     return Samakal;
   }(AbastractNewspaper);
-  var paperName$1 = "সুপ্রভাত বাংলাদেশ";
-  var paperImage$1 = "https://suprobhat.com/wp-content/uploads/2020/05/Logo.png";
-  var urls$1 = [ "https://suprobhat.com/", "https://www.bd-journal.com/bangladesh" ];
+  var paperName$2 = "সুপ্রভাত বাংলাদেশ";
+  var paperImage$2 = "https://suprobhat.com/wp-content/uploads/2020/05/Logo.png";
+  var urls$2 = [ "https://suprobhat.com/", "https://www.bd-journal.com/bangladesh" ];
   var SuprovatBD = function(_super) {
     __extends(SuprovatBD, _super);
     function SuprovatBD() {
-      return _super.call(this, paperName$1, paperImage$1, urls$1) || this;
+      return _super.call(this, paperName$2, paperImage$2, urls$2) || this;
     }
     SuprovatBD.prototype.getTags = function() {
       var result = __spreadArray([], document.querySelectorAll(".td-category a"), true).map((function(element) {
@@ -1580,13 +1580,13 @@
     };
     return SuprovatBD;
   }(AbastractNewspaper);
-  var paperName = "সিলেট এক্সপ্রেস";
-  var paperImage = "https://sylhetexpress.net/images/logo.jpg";
-  var urls = [ "https://sylhetexpress.net/" ];
+  var paperName$1 = "সিলেট এক্সপ্রেস";
+  var paperImage$1 = "https://sylhetexpress.net/images/logo.jpg";
+  var urls$1 = [ "https://sylhetexpress.net/" ];
   var SylhetExpress = function(_super) {
     __extends(SylhetExpress, _super);
     function SylhetExpress() {
-      return _super.call(this, paperName, paperImage, urls, true) || this;
+      return _super.call(this, paperName$1, paperImage$1, urls$1, true) || this;
     }
     SylhetExpress.prototype.getImages = function() {
       var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
@@ -1615,7 +1615,56 @@
     };
     return SylhetExpress;
   }(AbastractNewspaper);
-  var newspapers = [ new AlokitoBangladesh, new AmatherSomoy, new Azadi, new Banglanews24, new BanikBarta, new BBC24News, new BBCBangla, new BDProtidin, new BDJournal, new Bhorerkagoj, new ChadpurTimes, new ChakariaNews, new CoxbazerNews, new DailyInqilab, new DainikSangram, new DailyStarbangla, new DainikBangla, new DesheBideshe, new GramerKagoj, new Ittefaq, new Jagonews24, new Jaijaidin, new Janakantha, new Jugantor, new Lakshmiput24, new Manabkantha, new MMProtidin, new MZamin, new NayaDiganta, new ProthomAlo, new ProthomFeni, new Purbanchal, new Rajshahinews24, new Samakal, new SuprovatBD, new SylhetExpress ];
+  var paperName = "ঢাকা পোস্ট";
+  var paperImage = "https://flashn3ws-scraper.fly.dev/api/v1/dist/dhaka-post.jpeg";
+  var urls = [ "https://www.dhakapost.com/latest-news", "https://www.dhakapost.com/country" ];
+  var DhakaPost = function(_super) {
+    __extends(DhakaPost, _super);
+    function DhakaPost() {
+      return _super.call(this, paperName, paperImage, urls) || this;
+    }
+    DhakaPost.prototype.getTags = function() {
+      var result = __spreadArray([], document.querySelectorAll("article"), true).filter((function(element, index) {
+        return index === 0;
+      })).map((function(element) {
+        return __spreadArray([], element.querySelectorAll("a[class*=bg]"), true).map((function(element) {
+          return element.textContent;
+        }));
+      })).flat(1);
+      return result;
+    };
+    DhakaPost.prototype.getImages = function() {
+      var mainImage = __spreadArray([], document.querySelectorAll('meta[property="og:image"]'), true).map((function(element) {
+        return element.content;
+      }));
+      var otherImages = __spreadArray([], document.querySelectorAll("article"), true).filter((function(element, index) {
+        return index === 0;
+      })).map((function(element) {
+        return __spreadArray([], element.querySelectorAll("img"), true).map((function(element) {
+          return element.src;
+        }));
+      }));
+      return __spreadArray(__spreadArray([], mainImage, true), otherImages, true);
+    };
+    DhakaPost.prototype.getLink = function() {
+      var result = __spreadArray([], document.querySelectorAll("a.group"), true).map((function(element) {
+        return element.href;
+      }));
+      return result;
+    };
+    DhakaPost.prototype.getContent = function() {
+      var result = __spreadArray([], document.querySelectorAll("article"), true).filter((function(element, index) {
+        return index === 0;
+      })).map((function(element) {
+        return __spreadArray([], element.querySelectorAll("p"), true).map((function(item) {
+          return item.textContent;
+        })).join("\n\n");
+      })).join("\n\n");
+      return result;
+    };
+    return DhakaPost;
+  }(AbastractNewspaper);
+  var newspapers = [ new AlokitoBangladesh, new AmatherSomoy, new Azadi, new Banglanews24, new BanikBarta, new BBC24News, new BBCBangla, new BDProtidin, new BDJournal, new Bhorerkagoj, new ChadpurTimes, new ChakariaNews, new CoxbazerNews, new DailyInqilab, new DainikSangram, new DailyStarbangla, new DainikBangla, new DesheBideshe, new GramerKagoj, new Ittefaq, new Jagonews24, new Jaijaidin, new Janakantha, new Jugantor, new Lakshmiput24, new Manabkantha, new MMProtidin, new MZamin, new NayaDiganta, new ProthomAlo, new ProthomFeni, new Purbanchal, new Rajshahinews24, new Samakal, new SuprovatBD, new SylhetExpress, new DhakaPost ];
   var getAllUrls = function() {
     return newspapers.map((function(newspaper) {
       return newspaper.urls;
