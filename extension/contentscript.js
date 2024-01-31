@@ -1646,7 +1646,7 @@
         })).filter((function(element) {
           return !element.includes("platform-cdn.sharethis.com") && !element.includes("icon.png");
         }));
-      }));
+      })).flat(1);
       return __spreadArray(__spreadArray([], mainImage, true), otherImages, true);
     };
     DhakaPost.prototype.getLink = function() {

@@ -33,7 +33,7 @@ class DhakaPost extends AbastractNewspaper {
         return [...element.querySelectorAll('img')].map(element => {
           return element.src
         }).filter(element => !element.includes('platform-cdn.sharethis.com') && !element.includes('icon.png'))
-      })
+      }).flat(1)
 
     return [...mainImage, ...otherImages]
   }
