@@ -1013,7 +1013,7 @@
   }(AbastractNewspaper);
   var paperName$f = "যায়যায়দিন";
   var paperImage$f = "https://www.jaijaidinbd.com/templates/web-view/images/logo_new.png";
-  var urls$f = [ "https://www.jaijaidinbd.com/all-news", "https://www.jaijaidinbd.com/wholecountry" ];
+  var urls$f = [ "https://www.jaijaidinbd.com/all-news", "https://www.jaijaidinbd.com/wholecountry", "https://www.jaijaidinbd.com/islam-and-religion" ];
   var Jaijaidin = function(_super) {
     __extends(Jaijaidin, _super);
     function Jaijaidin() {

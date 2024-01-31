@@ -4,7 +4,8 @@ const paperName = 'যায়যায়দিন'
 const paperImage = 'https://www.jaijaidinbd.com/templates/web-view/images/logo_new.png'
 const urls = [
   'https://www.jaijaidinbd.com/all-news',
-  'https://www.jaijaidinbd.com/wholecountry'
+  'https://www.jaijaidinbd.com/wholecountry',
+  'https://www.jaijaidinbd.com/islam-and-religion'
 ]
 
 class Jaijaidin extends AbastractNewspaper {
