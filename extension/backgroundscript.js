@@ -1,311 +1,285 @@
-(function(factory) {
-  typeof define === "function" && define.amd ? define(factory) : factory();
+(function(e) {
+    typeof define === "function" && define.amd ? define(e) : e();
 })((function() {
-  "use strict";
-  function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) {
-      return value instanceof P ? value : new P((function(resolve) {
-        resolve(value);
-      }));
+    "use strict";
+    function __awaiter(e, t, n, r) {
+        function adopt(e) {
+            return e instanceof n ? e : new n((function(t) {
+                t(e);
+            }));
+        }
+        return new (n || (n = Promise))((function(n, o) {
+            function fulfilled(e) {
+                try {
+                    step(r.next(e));
+                } catch (e) {
+                    o(e);
+                }
+            }
+            function rejected(e) {
+                try {
+                    step(r["throw"](e));
+                } catch (e) {
+                    o(e);
+                }
+            }
+            function step(e) {
+                e.done ? n(e.value) : adopt(e.value).then(fulfilled, rejected);
+            }
+            step((r = r.apply(e, t || [])).next());
+        }));
     }
-    return new (P || (P = Promise))((function(resolve, reject) {
-      function fulfilled(value) {
-        try {
-          step(generator.next(value));
-        } catch (e) {
-          reject(e);
+    function __generator(e, t) {
+        var n = {
+            label: 0,
+            sent: function() {
+                if (a[0] & 1) throw a[1];
+                return a[1];
+            },
+            trys: [],
+            ops: []
+        }, r, o, a, c;
+        return c = {
+            next: verb(0),
+            throw: verb(1),
+            return: verb(2)
+        }, typeof Symbol === "function" && (c[Symbol.iterator] = function() {
+            return this;
+        }), c;
+        function verb(e) {
+            return function(t) {
+                return step([ e, t ]);
+            };
         }
-      }
-      function rejected(value) {
-        try {
-          step(generator["throw"](value));
-        } catch (e) {
-          reject(e);
+        function step(u) {
+            if (r) throw new TypeError("Generator is already executing.");
+            while (c && (c = 0, u[0] && (n = 0)), n) try {
+                if (r = 1, o && (a = u[0] & 2 ? o["return"] : u[0] ? o["throw"] || ((a = o["return"]) && a.call(o), 
+                0) : o.next) && !(a = a.call(o, u[1])).done) return a;
+                if (o = 0, a) u = [ u[0] & 2, a.value ];
+                switch (u[0]) {
+                  case 0:
+                  case 1:
+                    a = u;
+                    break;
+
+                  case 4:
+                    n.label++;
+                    return {
+                        value: u[1],
+                        done: false
+                    };
+
+                  case 5:
+                    n.label++;
+                    o = u[1];
+                    u = [ 0 ];
+                    continue;
+
+                  case 7:
+                    u = n.ops.pop();
+                    n.trys.pop();
+                    continue;
+
+                  default:
+                    if (!(a = n.trys, a = a.length > 0 && a[a.length - 1]) && (u[0] === 6 || u[0] === 2)) {
+                        n = 0;
+                        continue;
+                    }
+                    if (u[0] === 3 && (!a || u[1] > a[0] && u[1] < a[3])) {
+                        n.label = u[1];
+                        break;
+                    }
+                    if (u[0] === 6 && n.label < a[1]) {
+                        n.label = a[1];
+                        a = u;
+                        break;
+                    }
+                    if (a && n.label < a[2]) {
+                        n.label = a[2];
+                        n.ops.push(u);
+                        break;
+                    }
+                    if (a[2]) n.ops.pop();
+                    n.trys.pop();
+                    continue;
+                }
+                u = t.call(e, n);
+            } catch (e) {
+                u = [ 6, e ];
+                o = 0;
+            } finally {
+                r = a = 0;
+            }
+            if (u[0] & 5) throw u[1];
+            return {
+                value: u[0] ? u[1] : void 0,
+                done: true
+            };
         }
-      }
-      function step(result) {
-        result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
-      }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-    }));
-  }
-  function __generator(thisArg, body) {
-    var _ = {
-      label: 0,
-      sent: function() {
-        if (t[0] & 1) throw t[1];
-        return t[1];
-      },
-      trys: [],
-      ops: []
-    }, f, y, t, g;
-    return g = {
-      next: verb(0),
-      throw: verb(1),
-      return: verb(2)
-    }, typeof Symbol === "function" && (g[Symbol.iterator] = function() {
-      return this;
-    }), g;
-    function verb(n) {
-      return function(v) {
-        return step([ n, v ]);
-      };
     }
-    function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-        if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 
-        0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-        if (y = 0, t) op = [ op[0] & 2, t.value ];
-        switch (op[0]) {
-         case 0:
-         case 1:
-          t = op;
-          break;
-
-         case 4:
-          _.label++;
-          return {
-            value: op[1],
-            done: false
-          };
-
-         case 5:
-          _.label++;
-          y = op[1];
-          op = [ 0 ];
-          continue;
-
-         case 7:
-          op = _.ops.pop();
-          _.trys.pop();
-          continue;
-
-         default:
-          if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
-            _ = 0;
-            continue;
-          }
-          if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
-            _.label = op[1];
-            break;
-          }
-          if (op[0] === 6 && _.label < t[1]) {
-            _.label = t[1];
-            t = op;
-            break;
-          }
-          if (t && _.label < t[2]) {
-            _.label = t[2];
-            _.ops.push(op);
-            break;
-          }
-          if (t[2]) _.ops.pop();
-          _.trys.pop();
-          continue;
+    typeof SuppressedError === "function" ? SuppressedError : function(e, t, n) {
+        var r = new Error(n);
+        return r.name = "SuppressedError", r.error = e, r.suppressed = t, r;
+    };
+    var e = [];
+    var getTabs = function(t) {
+        var n = e.find((function(e) {
+            return e.tabId === t;
+        }));
+        e = e.filter((function(e) {
+            return e.tabId !== t;
+        }));
+        return n;
+    };
+    var append = function(t) {
+        e.push(t);
+    };
+    var t = 30 * 1e3;
+    var n = function() {
+        function SocketIO() {
+            var e = this;
+            this.onConnect = function() {
+                console.info("connected");
+            };
+            this.onDisconnect = function() {
+                console.info("disconnected");
+            };
+            this.onCloseTab = function(e) {
+                var t = e.url;
+                chrome.tabs.query({}, (function(e) {
+                    var n = e.filter((function(e) {
+                        var n;
+                        return (n = e.url) === null || n === void 0 ? void 0 : n.includes(t);
+                    })).map((function(e) {
+                        return e.id;
+                    }));
+                    n.forEach((function(e) {
+                        return chrome.tabs.remove(e);
+                    }));
+                }));
+            };
+            this.onAllURLS = function(e) {
+                var n = {
+                    type: "scraper.request.all_urls"
+                };
+                chrome.tabs.create({
+                    url: "https://google.com"
+                }, (function(r) {
+                    var o = r.id;
+                    var a = setTimeout((function() {
+                        chrome.tabs.remove(o);
+                    }), t);
+                    append({
+                        tabId: o,
+                        payload: n,
+                        reqId: a,
+                        callback: e
+                    });
+                }));
+            };
+            this.onAllURLSForPaper = function(e, n) {
+                var r = e.paper;
+                var o = {
+                    type: "scraper.request.all_urls.paper",
+                    paper: r
+                };
+                chrome.tabs.create({
+                    url: "https://google.com"
+                }, (function(e) {
+                    var r = e.id;
+                    var a = setTimeout((function() {
+                        chrome.tabs.remove(r);
+                    }), t);
+                    append({
+                        tabId: r,
+                        payload: o,
+                        reqId: a,
+                        callback: n
+                    });
+                }));
+            };
+            this.onNewsLinks = function(e, n) {
+                var r = e.url;
+                var o = {
+                    type: "scraper.request.news_links",
+                    url: r
+                };
+                chrome.tabs.create({
+                    url: r
+                }, (function(e) {
+                    var r = e.id;
+                    var a = setTimeout((function() {
+                        chrome.tabs.remove(r);
+                    }), t);
+                    append({
+                        tabId: r,
+                        payload: o,
+                        reqId: a,
+                        callback: n
+                    });
+                }));
+            };
+            this.onDomContent = function(e, n) {
+                var r = e, o = r.url, a = r.paper;
+                var c = {
+                    type: "scraper.request.dom_content",
+                    link: {
+                        paper: a,
+                        url: o
+                    }
+                };
+                chrome.tabs.create({
+                    url: o
+                }, (function(e) {
+                    var r = e.id;
+                    var o = setTimeout((function() {
+                        chrome.tabs.remove(r);
+                    }), t);
+                    append({
+                        tabId: r,
+                        payload: c,
+                        reqId: o,
+                        callback: n
+                    });
+                }));
+            };
+            this.connect = function() {
+                e.socket.connect();
+                e.socket.on("connect", e.onConnect);
+                e.socket.on("disconnect", e.onDisconnect);
+                e.socket.on("request.all_urls", e.onAllURLS);
+                e.socket.on("request.all_urls.paper", e.onAllURLSForPaper);
+                e.socket.on("request.news_links", e.onNewsLinks);
+                e.socket.on("request.dom_content", e.onDomContent);
+                e.socket.on("request.close_tab", e.onCloseTab);
+            };
+            this.socket = io("http://localhost:3000", {
+                autoConnect: false
+            });
         }
-        op = body.call(thisArg, _);
-      } catch (e) {
-        op = [ 6, e ];
-        y = 0;
-      } finally {
-        f = t = 0;
-      }
-      if (op[0] & 5) throw op[1];
-      return {
-        value: op[0] ? op[1] : void 0,
-        done: true
-      };
-    }
-  }
-  typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
-    var e = new Error(message);
-    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-  };
-  var callbacks = [];
-  var getTabs = function(tabId) {
-    var tab = callbacks.find((function(item) {
-      return item.tabId === tabId;
-    }));
-    callbacks = callbacks.filter((function(item) {
-      return item.tabId !== tabId;
-    }));
-    return tab;
-  };
-  var append = function(payload) {
-    callbacks.push(payload);
-  };
-  var wait = function(ms) {
-    return __awaiter(void 0, void 0, void 0, (function() {
-      return __generator(this, (function(_a) {
-        switch (_a.label) {
-         case 0:
-          return [ 4, new Promise((function(resolve) {
-            return setTimeout(resolve, ms);
-          })) ];
-
-         case 1:
-          _a.sent();
-          return [ 2 ];
-        }
-      }));
-    }));
-  };
-  var requestTimeoutInMs = 30 * 1e3;
-  var SocketIO = function() {
-    function SocketIO() {
-      var _this = this;
-      this.onConnect = function() {
-        console.info("connected");
-      };
-      this.onDisconnect = function() {
-        console.info("disconnected");
-      };
-      this.onCloseTab = function(data) {
-        var url = data.url;
-        chrome.tabs.query({}, (function(tabs) {
-          var ids = tabs.filter((function(tab) {
-            var _a;
-            return (_a = tab.url) === null || _a === void 0 ? void 0 : _a.includes(url);
-          })).map((function(tab) {
-            return tab.id;
-          }));
-          ids.forEach((function(id) {
-            return chrome.tabs.remove(id);
-          }));
+        return SocketIO;
+    }();
+    var r = new n;
+    var handleTabUpdate = function(e, t) {
+        return __awaiter(void 0, void 0, void 0, (function() {
+            var n, r;
+            return __generator(this, (function(o) {
+                if (t.status === "complete") {
+                    n = getTabs(e);
+                    if (!Boolean(n)) {
+                        return [ 2 ];
+                    }
+                    r = n.payload.reqId;
+                    chrome.tabs.sendMessage(e, n.payload, (function(e) {
+                        clearTimeout(r);
+                        n.callback(e);
+                    }));
+                }
+                return [ 2 ];
+            }));
         }));
-      };
-      this.onAllURLS = function(callback) {
-        var payload = {
-          type: "scraper.request.all_urls"
-        };
-        chrome.tabs.create({
-          url: "https://google.com"
-        }, (function(tab) {
-          var tabId = tab.id;
-          var reqId = setTimeout((function() {
-            chrome.tabs.remove(tabId);
-          }), requestTimeoutInMs);
-          append({
-            tabId: tabId,
-            payload: payload,
-            reqId: reqId,
-            callback: callback
-          });
-        }));
-      };
-      this.onAllURLSForPaper = function(data, callback) {
-        var paper = data.paper;
-        var payload = {
-          type: "scraper.request.all_urls.paper",
-          paper: paper
-        };
-        chrome.tabs.create({
-          url: "https://google.com"
-        }, (function(tab) {
-          var tabId = tab.id;
-          var reqId = setTimeout((function() {
-            chrome.tabs.remove(tabId);
-          }), requestTimeoutInMs);
-          append({
-            tabId: tabId,
-            payload: payload,
-            reqId: reqId,
-            callback: callback
-          });
-        }));
-      };
-      this.onNewsLinks = function(data, callback) {
-        var url = data.url;
-        var payload = {
-          type: "scraper.request.news_links",
-          url: url
-        };
-        chrome.tabs.create({
-          url: url
-        }, (function(tab) {
-          var tabId = tab.id;
-          var reqId = setTimeout((function() {
-            chrome.tabs.remove(tabId);
-          }), requestTimeoutInMs);
-          append({
-            tabId: tabId,
-            payload: payload,
-            reqId: reqId,
-            callback: callback
-          });
-        }));
-      };
-      this.onDomContent = function(data, callback) {
-        var _a = data, url = _a.url, paper = _a.paper;
-        var payload = {
-          type: "scraper.request.dom_content",
-          link: {
-            paper: paper,
-            url: url
-          }
-        };
-        chrome.tabs.create({
-          url: url
-        }, (function(tab) {
-          var tabId = tab.id;
-          var reqId = setTimeout((function() {
-            chrome.tabs.remove(tabId);
-          }), requestTimeoutInMs);
-          append({
-            tabId: tabId,
-            payload: payload,
-            reqId: reqId,
-            callback: callback
-          });
-        }));
-      };
-      this.connect = function() {
-        _this.socket.connect();
-        _this.socket.on("connect", _this.onConnect);
-        _this.socket.on("disconnect", _this.onDisconnect);
-        _this.socket.on("request.all_urls", _this.onAllURLS);
-        _this.socket.on("request.all_urls.paper", _this.onAllURLSForPaper);
-        _this.socket.on("request.news_links", _this.onNewsLinks);
-        _this.socket.on("request.dom_content", _this.onDomContent);
-        _this.socket.on("request.close_tab", _this.onCloseTab);
-      };
-      this.socket = io("http://localhost:3000", {
-        autoConnect: false
-      });
-    }
-    return SocketIO;
-  }();
-  var socketIO = new SocketIO;
-  var handleTabUpdate = function(tabId, info) {
-    return __awaiter(void 0, void 0, void 0, (function() {
-      var tab_1, reqId_1;
-      return __generator(this, (function(_a) {
-        switch (_a.label) {
-         case 0:
-          if (!(info.status === "complete")) return [ 3, 2 ];
-          tab_1 = getTabs(tabId);
-          if (!Boolean(tab_1)) {
-            return [ 2 ];
-          }
-          return [ 4, wait(3 * 1e3) ];
-
-         case 1:
-          _a.sent();
-          reqId_1 = tab_1.payload.reqId;
-          chrome.tabs.sendMessage(tabId, tab_1.payload, (function(response) {
-            clearTimeout(reqId_1);
-            chrome.tabs.remove(tabId);
-            tab_1.callback(response);
-          }));
-          _a.label = 2;
-
-         case 2:
-          return [ 2 ];
-        }
-      }));
-    }));
-  };
-  socketIO.connect();
-  chrome.tabs.onUpdated.addListener(handleTabUpdate);
+    };
+    r.connect();
+    chrome.tabs.onUpdated.addListener(handleTabUpdate);
 }));

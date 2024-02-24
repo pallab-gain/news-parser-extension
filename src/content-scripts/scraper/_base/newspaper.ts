@@ -1,4 +1,5 @@
 import { type Details } from '../../../types/message'
+import { wait } from '../../../utils/utils'
 
 class AbastractNewspaper {
   private readonly _paper: string
@@ -59,7 +60,7 @@ class AbastractNewspaper {
     throw new Error('Not implemented')
   }
 
-  getNewsLinks (): string[] {
+  async getNewsLinks (): Promise<string[]> {
     let links: string[] = []
     try {
       links = this.getLink()
@@ -70,11 +71,11 @@ class AbastractNewspaper {
     return links
   }
 
-  getNewsContent (props: { link: string }): Details {
+  async getNewsContent (props: { link: string }): Promise<Details> {
     let details: Details = {} as Details
     try {
       this.removeAds()
-
+      await wait(5 * 1000)
       const title = this.getTitle() ?? ''
       const summary = this.getSummary() ?? ''
       const tags = this.getTags()?.filter(item => !!item) ?? []

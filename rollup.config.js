@@ -14,11 +14,14 @@ const contentScript = {
     plugins: [
         typescript(),
         terser({
-            mangle: false,
+            mangle: {
+                keep_fnames: true, // Prevents renaming of function names
+                keep_classnames: true // Prevents renaming of class names (if applicable)
+            },
             compress: false,
             format: {
                 beautify: true,
-                indent_level: 2
+                indent_level: 2,
             }
         })
     ]
@@ -37,11 +40,13 @@ const backgroundScript = {
     plugins: [
         typescript(),
         terser({
-            mangle: false,
+            mangle: {
+                keep_fnames: true, // Prevents renaming of function names
+                keep_classnames: true // Prevents renaming of class names (if applicable)
+            },
             compress: false,
             format: {
                 beautify: true,
-                indent_level: 2
             }
         }),
     ]

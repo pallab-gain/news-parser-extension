@@ -91,14 +91,14 @@ const getAllUrlsForPaper = (paper: string): string[] => {
     }).flat(1)
 }
 
-const getContentUrls = (url: string): Link[] => {
+const getContentUrls = async (url: string): Promise<Link[]> => {
   const newspaper = newspapers.find((newspaper) => {
     return newspaper.urls.includes(url)
   })
   if (newspaper == null) {
     throw new Error('newspaper not found')
   }
-  const links = newspaper.getNewsLinks()
+  const links = await newspaper.getNewsLinks()
   const retval = links
     .map((link): Link => {
       return {
@@ -110,7 +110,7 @@ const getContentUrls = (url: string): Link[] => {
   return retval
 }
 
-const getNewsContent = (link: Link): Details => {
+const getNewsContent = async (link: Link): Promise<Details> => {
   const newspaper = newspapers.find((newspaper) => {
     return newspaper.name === link.paper
   })
@@ -118,7 +118,7 @@ const getNewsContent = (link: Link): Details => {
     throw new Error('newspaper not found')
   }
 
-  const content = newspaper.getNewsContent({ link: link.url })
+  const content = await newspaper.getNewsContent({ link: link.url })
   return content
 }
 
